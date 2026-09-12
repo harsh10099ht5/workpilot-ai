@@ -1,0 +1,63 @@
+{
+  "business_name": "Sunshine Retail Store",
+  "today_sales": 42500,
+  "pending_orders": [
+    {
+      "order_id": "ORD-1001",
+      "customer": "Rahul",
+      "amount": 3200,
+      "status": "Payment confirmed, delivery pending"
+    },
+    {
+      "order_id": "ORD-1002",
+      "customer": "Priya",
+      "amount": 1850,
+      "status": "Packing pending"
+    },
+    {
+      "order_id": "ORD-1003",
+      "customer": "Aman",
+      "amount": 5400,
+      "status": "Customer requested delivery update"
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Restock fast-moving products",
+      "priority": "High",
+      "deadline": "Today"
+    },
+    {
+      "task": "Follow up on pending deliveries",
+      "priority": "High",
+      "deadline": "Today"
+    },
+    {
+      "task": "Review today's sales performance",
+      "priority": "Medium",
+      "deadline": "Today"
+    },
+    {
+      "task": "Prepare tomorrow's inventory list",
+      "priority": "Medium",
+      "deadline": "Tomorrow"
+    }
+  ],
+  "customer_issues": [
+    {
+      "customer": "Aman",
+      "issue": "Wants an update on delivery status",
+      "priority": "High"
+    },
+    {
+      "customer": "Neha",
+      "issue": "Asked about product availability",
+      "priority": "Medium"
+    },
+    {
+      "customer": "Vikram",
+      "issue": "Requested return information",
+      "priority": "Medium"
+    }
+  ]
+}
