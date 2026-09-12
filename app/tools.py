@@ -1,6 +1,8 @@
 import json
 from pathlib import Path
 
+from strands import tool
+
 
 DATA_FILE = Path(__file__).parent / "data" / "business.json"
 
@@ -11,6 +13,7 @@ def load_business_data():
         return json.load(file)
 
 
+@tool
 def get_business_overview():
     """Return a summary of the business."""
     data = load_business_data()
@@ -24,18 +27,21 @@ def get_business_overview():
     }
 
 
+@tool
 def get_pending_orders():
     """Return orders that still need attention."""
     data = load_business_data()
     return data["pending_orders"]
 
 
+@tool
 def get_open_tasks():
     """Return current operational tasks."""
     data = load_business_data()
     return data["tasks"]
 
 
+@tool
 def get_customer_issues():
     """Return customer issues requiring attention."""
     data = load_business_data()
